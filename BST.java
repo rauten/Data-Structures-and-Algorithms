@@ -32,8 +32,8 @@ public class BST<T extends Comparable<? super T>> implements BSTInterface<T> {
         }
     }
     /**
-    *@param current node that does stuff
-    *@param dt data bruh
+    *@param current node
+    *@param dt data
     **/
     private void realAdd(BSTNode<T> current, T dt) {
         if (root == null) {
@@ -390,26 +390,19 @@ public class BST<T extends Comparable<? super T>> implements BSTInterface<T> {
                 realHeight(current.getLeft())) + 1;
         }
     }
-
+    
+    /**
+     * @return the height of the tree
+     */
     @Override
     public int height() {
         return realHeight(root);
     }
 
     /**
-     * THIS METHOD IS ONLY FOR TESTING PURPOSES.
-     * DO NOT USE IT IN YOUR CODE
-     * DO NOT CHANGE THIS METHOD
-     *
      * @return the root of the tree
      */
     public BSTNode<T> getRoot() {
         return root;
-    }
-    /**
-     * A method that adds x and y.
-     * @param args takes in an argument
-     */
-    public static void main(String[] args) {
     }
 }
