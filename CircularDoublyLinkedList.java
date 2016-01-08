@@ -288,15 +288,11 @@ public class CircularDoublyLinkedList<T> implements LinkedListInterface<T> {
         size = 0;
     }
 
-    /* DO NOT MODIFY THIS METHOD */
+    /**
+     * @return LikedListNode: node that is the head of the Linked List
+     */
     @Override
     public LinkedListNode<T> getHead() {
         return head;
-    }
-    /**
-     * A method that adds x and y.
-     * @param args takes in an argument
-     */
-    public static void main(String[] args) {
     }
 }
